@@ -1,4 +1,5 @@
 import 'package:calculator_app/pages/add.dart';
+import 'package:calculator_app/pages/subtract.dart';
 import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
@@ -29,7 +30,8 @@ class Homepage extends StatelessWidget {
                   backgroundColor: Colors.deepPurpleAccent,
                 ),
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=> AddPage()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => AddPage()));
                 },
                 child: Text(
                   "ADD",
@@ -49,7 +51,10 @@ class Homepage extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.deepPurpleAccent,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => SubtractPage()));
+                },
                 child: Text(
                   "SUBTRACT",
                   style: TextStyle(
@@ -68,9 +73,7 @@ class Homepage extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.deepPurpleAccent,
                 ),
-                onPressed: () {
-
-                },
+                onPressed: () {},
                 child: Text(
                   "MULTIPLY",
                   style: TextStyle(

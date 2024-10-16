@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AddPage extends StatelessWidget {
-  const AddPage({super.key});
+class SubtractPage extends StatelessWidget {
+  const SubtractPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class AddPage extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text(
-            "Add",
+            "Subtract",
             style: TextStyle(
               color: Colors.white,
             ),
@@ -44,7 +44,7 @@ class AddPage extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {},
                   child: Text(
-                    "ADD",
+                    "SUBTRACT",
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 20,

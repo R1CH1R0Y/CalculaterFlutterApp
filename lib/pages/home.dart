@@ -1,4 +1,5 @@
 import 'package:calculator_app/pages/add.dart';
+import 'package:calculator_app/pages/divide.dart';
 import 'package:calculator_app/pages/multiply.dart';
 import 'package:calculator_app/pages/subtract.dart';
 import 'package:flutter/material.dart';
@@ -96,7 +97,10 @@ class Homepage extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.deepPurpleAccent,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => DividePage()));
+                },
                 child: Text(
                   "DIVIDE",
                   style: TextStyle(
